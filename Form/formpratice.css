@@ -1,0 +1,187 @@
+        html {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            /* font-family: sans-serif; */
+            background-color: #1e90eb;
+            font-family: 'Noto Sans JP', sans-serif;
+            background: url(/img/sign_up_backgroundemd.jpg) no-repeat center center/cover;
+        }
+        
+        .luna {
+            position: absolute;
+            top: 46%;
+            left: 50%;
+            width: 500px;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, .5);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+            border-radius: 10px;
+        }
+        
+        .luna h1 {
+            margin: 0 0 30px;
+            padding: 0;
+            color: black;
+            text-align: center;
+        }
+        
+        .luna .luna1 {
+            position: relative;
+        }
+        
+        .luna .luna1 input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            border: none;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            background-color: transparent;
+            outline: none;
+        }
+        /* 
+.luna .luna2 input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+} */
+        
+        .luna .luna1 label {
+            font-size: 16px;
+            position: absolute;
+            top: 0px;
+            color: #fff;
+            left: 0px;
+            padding: 10px 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        
+        .luna .luna1 input:focus~label,
+        .luna .luna1 input:valid~label {
+            top: -20px;
+            left: 0px;
+            color: #03e9f4;
+        }
+        
+        .luna form a {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+            padding: 10 px 20 px;
+            color: #03e9f4;
+            font-size: 16px;
+            text-decoration: none;
+            transition: .5s;
+            margin-top: 40 px;
+            height: 100%;
+        }
+        
+        .luna a:hover {
+            background-color: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+        }
+        
+        .luna a span {
+            position: absolute;
+            display: block;
+        }
+        
+        .luna a span:nth-child(1) {
+            top: 0px;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background-color: linear-gradient(90deg, trangsparent, #03e9f4);
+            animation-name: lina;
+            animation-duration: 1s;
+            animation-iteration-count: linear infinite;
+        }
+        
+        @keyframes lina {
+            0% {
+                left: -100%
+            }
+            50%,
+            100% {
+                left: 100%
+            }
+        }
+        
+        .luna a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03e9f4);
+            animation: btn-anim2 1s linear infinite;
+            animation-delay: .25s
+        }
+        
+        @keyframes btn-anim2 {
+            0% {
+                top: -100%;
+            }
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+        
+        .luna a span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #03e9f4);
+            animation: btn-anim3 1s linear infinite;
+            animation-delay: .5s
+        }
+        
+        @keyframes btn-anim3 {
+            0% {
+                right: -100%;
+            }
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+        
+        .luna a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03e9f4);
+            animation: btn-anim4 1s linear infinite;
+            animation-delay: .75s
+        }
+        
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
